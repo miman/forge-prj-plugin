@@ -10,16 +10,16 @@ It has 2 commands:
 * setup
 * add-plugin
 
-The setup command does the following:
+The *setup* command does the following:
 * adds all needed dependencies to the pom.xml
 * Adds a beans.xml file
 * Adds a forge.xml file
 
-The add-plugin command does the following:
+The *add-plugin* command does the following:
 * adds a Facet  class
 * adds a Plugin class using the created facet
 * Adds a example resources that are used by the generated plugin/facet
 * Adds a Completer & Type class to show the completer concept
 
 
-To test to create a Forge plugin project run the forge-plugin-example.fsh file in a forge shell after installing this plugin.
+To test to create a Forge plugin project run the *forge-plugin-example.fsh* file in a forge shell after installing this plugin.
