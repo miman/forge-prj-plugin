@@ -1,9 +1,5 @@
-/**
- * 
- */
 package ${path}.facet;
 
-import java.io.StringWriter;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -17,8 +13,6 @@ import org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader;
 import org.jboss.forge.maven.MavenCoreFacet;
 import org.jboss.forge.project.facets.DependencyFacet;
 import org.jboss.forge.project.facets.JavaSourceFacet;
-import org.jboss.forge.project.facets.ResourceFacet;
-import org.jboss.forge.resources.FileResource;
 import org.jboss.forge.shell.plugins.Alias;
 import org.jboss.forge.shell.plugins.RequiresFacet;
 
@@ -115,38 +109,11 @@ public class ${class-name}Facet extends MimanBaseFacet {
 
 		VelocityContext velocityContext = velocityUtil
 				.createVelocityContext(velocityPlaceholderMap);
-		createResourceAbsolute(sourceUri, velocityContext, targetUri);
+		velocityUtil.createResourceAbsolute(sourceUri, velocityContext, targetUri, project, velocityEngine);
 	}
 	
 	@Override
 	protected String getTargetPomFilePath() {
 		return "/template-files/pom.xml";
-	}
-
-	/**
-	 * Stores the template file as the target file after running a velocity
-	 * merge on the template file.
-	 * 
-	 * @param templateFilePath
-	 *            The template file to store after replacing all velocity
-	 *            placeholders
-	 * @param velocityContext
-	 *            The velocity placeholder mappings
-	 * @param targetFilePath
-	 *            The target file path + name
-	 * @return The target file
-	 */
-	public FileResource<?> createResourceAbsolute(String templateFilePath,
-			VelocityContext velocityContext, String targetFilePath) {
-		ResourceFacet resources = project.getFacet(ResourceFacet.class);
-
-		StringWriter stringWriter = new StringWriter();
-		velocityEngine.mergeTemplate(templateFilePath, "UTF-8", velocityContext,
-				stringWriter);
-
-		System.out.println("Storing file in: " + targetFilePath);
-		FileResource<?> createdResource = resources.createResource(stringWriter
-				.toString().toCharArray(), targetFilePath);
-		return createdResource;
 	}
 }
