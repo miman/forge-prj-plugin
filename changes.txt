@@ -1,0 +1,15 @@
+This file contains the changes needed for a project to be a forge project.
+
+- Add folder template-files to src/main/resources
+- Add file forge.xml to META-INF folder (if we are to use a dependecy jar that works with forge plugins & artifacts.)
+- Use the pom.xml velocity template file
+
+Creating example files:
+Here we create a Plugin & a Facet file to demonstrate how these are built.
+
+MainPlugin
+This has 2 Forge commands
+- setup, which uses a normal facet to add an extra file
+- extra-cmd, which uses a miman facet to modify the pom.xml file add a Java class
+
+ 
