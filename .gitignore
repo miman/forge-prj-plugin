@@ -1,3 +1,7 @@
 /release.properties
 /target
 /pom.xml.releaseBackup
+/.settings
+/.classpath
+/.project
+/.forge_settings
