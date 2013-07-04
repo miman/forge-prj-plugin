@@ -1,5 +1,5 @@
 @/* This is a test script demonstrating the creation of a project with these forge plugins */;
-@/* run this by starting a forge console & write 'run miman-prj-example.fsh' */;
+@/* run this by starting a forge console & write 'run forge-plugin-example.fsh' */;
 @/* OBS ! For some reason the script hangs when running in the eclipse shell, but works fine in a separate console window. */;
 
 @/* Clear the screen */;

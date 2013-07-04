@@ -2,3 +2,20 @@ forge-prj-plugin
 ================
 
 A JBoss Forge plugin to create Forge plugin projects
+
+This JBoss Forge plugin is used if you want to create a JBoss Forge plugin.
+
+It has 2 commands:
+* setup
+* add-plugin
+
+The setup command does the following:
+* adds all needed dependencies to the pom.xml
+* Adds a beans.xml file
+* Adds a forge.xml file
+
+The add-plugin command does the following:
+* adds a Facet  class
+* adds a Plugin class using the created facet
+* Adds a example resources that are used by the generated plugin/facet
+* Adds a Completer & Type class to show the completer concept
