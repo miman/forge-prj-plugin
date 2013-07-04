@@ -4,7 +4,7 @@
 	<groupId>se.miman.forge.forgeprjplugin</groupId>
 	<artifactId>forge-prj-plugin</artifactId>
 	<name>${artifactId}</name>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 
 	<properties>
 		<forge.api.version>1.2.3.Final</forge.api.version>
@@ -110,6 +110,5 @@
 		<connection>scm:git:git@github.com:mikaelth/forge-prj-plugin.git</connection>
 		<url>scm:git:git@github.com:mikaelth/forge-prj-plugin.git</url>
 		<developerConnection>scm:git:git@github.com:mikaelth/forge-prj-plugin.git</developerConnection>
-	  <tag>forge-prj-plugin-1.0.0</tag>
   </scm>
 </project>
