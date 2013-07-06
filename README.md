@@ -24,7 +24,9 @@ The **add-plugin** command does the following:
 
 To test to create a Forge plugin project run the **forge-plugin-example.fsh** file in a forge shell after installing this plugin.
 
-**OBS !!**
+
+OBS ! - Needed Maven project dependency
+---------------------------------------
 This project has a dependency to the **miman-forge-plugin-util** project.
 So to build this project you must download (and build) version 1.0.0 of this project first
 [Found here](https://github.com/mikaelth/miman-forge-plugin-util)
