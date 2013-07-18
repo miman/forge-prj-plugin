@@ -107,8 +107,8 @@
 	</build>
 
 	<scm>
-		<connection>scm:git:git@github.com:mikaelth/forge-prj-plugin.git</connection>
-		<url>scm:git:git@github.com:mikaelth/forge-prj-plugin.git</url>
-		<developerConnection>scm:git:git@github.com:mikaelth/forge-prj-plugin.git</developerConnection>
+		<connection>scm:git:git@github.com:miman/forge-prj-plugin.git</connection>
+		<url>scm:git:git@github.com:miman/forge-prj-plugin.git</url>
+		<developerConnection>scm:git:git@github.com:miman/forge-prj-plugin.git</developerConnection>
   </scm>
 </project>
