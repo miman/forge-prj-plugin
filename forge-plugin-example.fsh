@@ -15,7 +15,8 @@ forge-plugin-prj setup;
 
 forge-plugin-prj add-plugin --name Test --path ~.test --alias qtest
 
-@/* We need to build the project to get the parent pom in the m2 repository */;
+@/* We need to build the project to get the parent pom in the m2 repository 
 mvn install;
 
 forge source-plugin .;
+*/;
