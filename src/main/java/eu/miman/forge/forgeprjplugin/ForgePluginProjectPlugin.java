@@ -1,4 +1,4 @@
-package se.miman.forge.forgeprjplugin;
+package eu.miman.forge.forgeprjplugin;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -23,10 +23,10 @@ import org.jboss.forge.shell.plugins.Plugin;
 import org.jboss.forge.shell.plugins.RequiresProject;
 import org.jboss.forge.shell.plugins.SetupCommand;
 
-import se.miman.forge.forgeprjplugin.facet.ForgePluginProjectFacet;
-import se.miman.forge.plugin.util.VelocityUtil;
-import se.miman.forge.plugin.util.helpers.FilePathUtil;
-import se.miman.forge.plugin.util.helpers.FilePathUtilImpl;
+import eu.miman.forge.forgeprjplugin.facet.ForgePluginProjectFacet;
+import eu.miman.forge.plugin.util.VelocityUtil;
+import eu.miman.forge.plugin.util.helpers.FilePathUtil;
+import eu.miman.forge.plugin.util.helpers.FilePathUtilImpl;
 
 /**
  * Modifies a project to a JBoss Forge plugin project.

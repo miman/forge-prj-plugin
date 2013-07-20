@@ -1,7 +1,7 @@
 /**
  * 
  */
-package se.miman.forge.forgeprjplugin.facet;
+package eu.miman.forge.forgeprjplugin.facet;
 
 import java.util.HashMap;
 import java.util.List;
@@ -19,10 +19,10 @@ import org.jboss.forge.project.facets.JavaSourceFacet;
 import org.jboss.forge.shell.plugins.Alias;
 import org.jboss.forge.shell.plugins.RequiresFacet;
 
-import se.miman.forge.plugin.util.MimanBaseFacet;
-import se.miman.forge.plugin.util.VelocityUtil;
-import se.miman.forge.plugin.util.helpers.DomFileHelper;
-import se.miman.forge.plugin.util.helpers.DomFileHelperImpl;
+import eu.miman.forge.plugin.util.MimanBaseFacet;
+import eu.miman.forge.plugin.util.VelocityUtil;
+import eu.miman.forge.plugin.util.helpers.DomFileHelper;
+import eu.miman.forge.plugin.util.helpers.DomFileHelperImpl;
 
 /**
  * A Facet for a JBoss forge plugin project.
