@@ -87,9 +87,9 @@ public class ForgePluginProjectPlugin implements Plugin {
 	 */
 	@Command(value = "add-plugin", help = "Adds an example Forge plugin and Facet to this project")
 	public void addRoute(
-			@Option(name = "name", shortName = "n") String name,
+			@Option(name = "name", shortName = "n", required=true) String name,
 			@Option(name = "path") String path,
-			@Option(name = "alias") String alias,
+			@Option(name = "alias", required=true) String alias,
 			PipeOut out) {
 		String usedPath = filePathUtil.replaceRelativePathToken(path, project);
 		addExampleFiles(name, usedPath, alias, out);
