@@ -37,5 +37,10 @@ Where the plugin should be created (under java/src), if this isn't suplpied the 
 
 You can use ~ to refer to the default project package name (ex: ~.plugins)
 
+### Test script
+
 To test to create a Forge plugin project run the **forge-plugin-example.fsh** file in a forge shell after installing this plugin.
+
+Otherwise this script can be used as an example on how to use the plugin.
+
 
